@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android4ApplicationDevelopment</string>
+    <string name="add_item_hint">New To Do Item</string>
+    <string name="add_item_content_des">New To Do Item</string>
+</resources>
