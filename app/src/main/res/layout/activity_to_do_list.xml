@@ -10,18 +10,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="a2ndrade.android4applicationdevelopment.ToDoListActivity">
 
-    <EditText
-        android:focusableInTouchMode="true"
-        android:id="@+id/todo_edit_text"
+    <fragment android:name="a2ndrade.android4applicationdevelopment.NewItemFragment"
+        android:id="@+id/new_item_fragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType=
-            "textCapSentences|textAutoCorrect"
-        android:hint="@string/add_item_hint" />
+        android:layout_height="wrap_content"/>
 
-    <ListView
-        android:id="@+id/todo_list_view"
+    <fragment android:name="a2ndrade.android4applicationdevelopment.ToDoListFragment"
+        android:id="@+id/todo_list_fragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
