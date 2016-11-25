@@ -27,4 +27,10 @@
         android:text="CallLog Activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_contacts"
+        android:text="Contacts Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>

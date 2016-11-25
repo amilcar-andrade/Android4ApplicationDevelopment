@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="a2ndrade.android4applicationdevelopment">
-    <uses-permission
-        android:name="android.permission.READ_CALL_LOG"/>
-    <uses-permission
-        android:name="android.permission.WRITE_CALL_LOG"/>
+
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,10 +19,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ToDoListActivity"/>
-        <activity android:name=".CompassActivity"/>
-        <activity android:name=".CallLogActivity"/>
-
+        <activity android:name=".ToDoListActivity" />
+        <activity android:name=".CompassActivity" />
+        <activity android:name=".CallLogActivity" />
+        <activity android:name=".ContactExample" />
+        <activity android:name=".ContactsActivity" android:label="PICKER">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/contact"/>
+            </intent-filter>
+        </activity>
     </application>
-
 </manifest>

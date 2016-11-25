@@ -1,7 +1,9 @@
 package a2ndrade.android4applicationdevelopment;
 
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.database.Cursor;
-import android.net.Uri;
+import android.os.BatteryManager;
 import android.os.Bundle;
 import android.provider.CallLog;
 import android.support.annotation.Nullable;
